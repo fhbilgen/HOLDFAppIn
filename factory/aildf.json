@@ -1,0 +1,9 @@
+{
+	"name": "aildf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d0688011-c767-44f6-ab5c-51583d3f36a0",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}
