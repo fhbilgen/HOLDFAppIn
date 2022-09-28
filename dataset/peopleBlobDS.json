@@ -1,0 +1,40 @@
+{
+	"name": "peopleBlobDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "peopleBLOBStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "people.txt",
+				"container": "aildata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": " Surname",
+				"type": "String"
+			},
+			{
+				"name": " YOB",
+				"type": "String"
+			},
+			{
+				"name": " Country",
+				"type": "String"
+			}
+		]
+	}
+}
