@@ -1,0 +1,40 @@
+{
+	"name": "peopleSqlDbDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "peopleTable",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "surname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "YOB",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "country",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "People"
+		}
+	}
+}
